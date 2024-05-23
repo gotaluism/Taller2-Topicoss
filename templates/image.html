@@ -1,0 +1,38 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokenea Aleatorio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .pokenea-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hecho por Luis Miguel Giraldo Gonzalez</h1>
+    <h3>Cada vez que recargues la pagina, te saldrá un pokenea diferente</h3>
+    <div class="pokenea-container">
+        <h1><em>{{ phrase }}</em></h1>
+        <img src="{{ image }}" alt="">
+        <p>ID Contenedor: {{ container_id }}</p>
+        
+    </div>
+</body>
+</html>
